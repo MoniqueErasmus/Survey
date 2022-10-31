@@ -1,0 +1,213 @@
+#a-main {
+  font-family: "Indie Flower", cursive;
+  webkit-user-select: none;
+  moz-user-select: none;
+  ms-user-select: none;
+  user-select: none;
+}
+
+#title {
+  font-size: 3.5rem;
+  color: #fff;
+  text-align: center;
+}
+#description {
+  font-size: 1.5rem;
+  color: #d3d3d3;
+  text-align: center;
+  font-style: italic;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  border-radius: 5px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+}
+
+.input-textarea {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+  border-radius: 5px;
+  text-align: left;
+  color: #000;
+  height: 100px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+.submit-button {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+  border-radius: 5px;
+  text-align: center;
+  color: #000000;
+  outline: none;
+}
+
+.submit-button:hover {
+  background-color: #b3b3cc;
+}
+
+.submit-button:active {
+  background-color: #ffcc66;
+  box-shadow: 0 0.5px #000000;
+  transform: translateY(4px);
+}
+
+select {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+  border-radius: 5px;
+  text-align: center;
+  color: #000;
+  height: 90%;
+  width: 20%;
+}
+
+#form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  font-family: "Raleway", sans-serif;
+}
+
+#form {
+  background: RGB(142, 132, 222, 0.48);
+  border-radius: 5px;
+  max-width: 800px;
+  min-width: 20px;
+  margin: auto;
+  align-content: left;
+}
+
+#survey-form {
+  font-size: 1.3rem;
+  padding: 30px;
+  color: #fff;
+  align-content: left;
+  overflow: hidden;
+  --border: 1px solid #a9a9a9;
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: black;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(123, 104, 23, 0.7),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://images.unsplash.com/photo-1593698054589-8c14bb66d2d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  height: 15px;
+  width: 25px;
+  opacity: 1;
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  --position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form-radio-group {
+  display: inline-block;
+}
+
+.container {
+  display: block;
+  --position: relative;
+  --padding-left: 35px;
+  --margin-bottom: 12px;
+  cursor: pointer;
+  --font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#dropdown {
+  width: 100%;
+  height: 20%;
+  font-family: "Raleway", sans-serif;
+}
+
+#email {
+  width: 100%;
+  height: 20%;
+  text-align: left;
+}
+
+#name {
+  width: 100%;
+  height: 20%;
+  text-align: left;
+}
+
+#number {
+  width: 100%;
+  height: 20%;
+  text-align: left;
+}
+
+#most-like {
+  width: 100%;
+  height: 20%;
+  font-family: "Raleway", sans-serif;
+}
